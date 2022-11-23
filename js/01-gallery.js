@@ -36,8 +36,8 @@ function onImgClick(event) {
     if (event.code === "Escape") {
       instance.close();
     }
+    galleryEl.removeEventListener("click", onImgClick);
   });
-  galleryEl.removeEventListener("click", onImgClick);
 }
 function blockStandartAction(event) {
   event.preventDefault();
