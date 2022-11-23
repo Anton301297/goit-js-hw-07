@@ -37,6 +37,7 @@ function onImgClick(event) {
       instance.close();
     }
   });
+  galleryEl.removeEventListener("click", onImgClick);
 }
 function blockStandartAction(event) {
   event.preventDefault();
